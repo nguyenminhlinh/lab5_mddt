@@ -1,0 +1,6 @@
+* source LAB5
+R_R1         0 N00179  680k TC=0,0 
+R_R2         N00175 N00157  2k TC=0,0 
+R_R3         0 N00171  1k TC=0,0 
+J_J1         N00175 N00179 N00171 JbreakN 
+V_V1         N00157 0 12Vdc
