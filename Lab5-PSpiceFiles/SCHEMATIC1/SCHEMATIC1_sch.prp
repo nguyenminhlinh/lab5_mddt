@@ -1,8 +1,8 @@
 ("FILE_TYPE"	"PMAP File"
     ("devices"
         ("R")
-        ("JbreakN")
         ("VDC")
+        ("MbreakN3D")
     )
     ("instances"
         ("R1"
@@ -11,11 +11,11 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"2200k")
+                    ("value"	"680k")
                     ("pspice_param"	"VALUE")
                 )
                 ("BiasValue Power"
-                    ("value"	"93.53e-18W")
+                    ("value"	"2.938uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -62,11 +62,11 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"1.8k")
+                    ("value"	"2k")
                     ("pspice_param"	"VALUE")
                 )
                 ("BiasValue Power"
-                    ("value"	"170.3uW")
+                    ("value"	"692.3uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -113,11 +113,11 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"3.3k")
+                    ("value"	"1k")
                     ("pspice_param"	"VALUE")
                 )
                 ("BiasValue Power"
-                    ("value"	"85.15uW")
+                    ("value"	"1.276mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("DIST"
@@ -155,21 +155,6 @@
                 ("PSpice Model Type"
                     ("value"	"0011")
                     ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
-        ("J1"
-            ("device_name"	"JbreakN")
-            ("pspice_path"	"J_J1")
-            ("level"	"0")
-            ("model_params"
-                ("BiasValue Power"
-                    ("value"	"3.246mW")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("AREA"
-                    ("value"	"")
-                    ("pspice_param"	"AREA")
                 )
             )
         )
@@ -183,7 +168,7 @@
                     ("pspice_param"	"DC")
                 )
                 ("BiasValue Power"
-                    ("value"	"-3.502mW")
+                    ("value"	"-7.476mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("PSpice Model Type"
@@ -192,50 +177,54 @@
                 )
             )
         )
-        ("R4"
-            ("device_name"	"R")
-            ("pspice_path"	"R_R4")
+        ("M1"
+            ("device_name"	"MbreakN3D")
+            ("pspice_path"	"M_M1")
             ("level"	"0")
             ("model_params"
-                ("VALUE"
-                    ("value"	"3300k")
-                    ("pspice_param"	"VALUE")
-                )
-                ("DIST"
-                    ("value"	"FLAT")
-                    ("pspice_param"	"DIST")
-                )
-                ("TOLERANCE"
+                ("L"
                     ("value"	"")
-                    ("pspice_param"	"TOLERANCE")
+                    ("pspice_param"	"L")
                 )
-                ("VOLTAGE"
-                    ("value"	"RVMAX")
-                    ("pspice_param"	"VOLTAGE")
+                ("W"
+                    ("value"	"")
+                    ("pspice_param"	"W")
                 )
-                ("SLOPE"
-                    ("value"	"RSMAX")
-                    ("pspice_param"	"SLOPE")
+                ("AD"
+                    ("value"	"")
+                    ("pspice_param"	"AD")
                 )
-                ("MAX_TEMP"
-                    ("value"	"RTMAX")
-                    ("pspice_param"	"MAX_TEMP")
+                ("AS"
+                    ("value"	"")
+                    ("pspice_param"	"AS")
                 )
-                ("POWER"
-                    ("value"	"RMAX")
-                    ("pspice_param"	"POWER")
+                ("PD"
+                    ("value"	"")
+                    ("pspice_param"	"PD")
                 )
-                ("TC1"
-                    ("value"	"0")
-                    ("pspice_param"	"TC1")
+                ("PS"
+                    ("value"	"")
+                    ("pspice_param"	"PS")
                 )
-                ("TC2"
-                    ("value"	"0")
-                    ("pspice_param"	"TC2")
+                ("NRD"
+                    ("value"	"")
+                    ("pspice_param"	"NRD")
                 )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
+                ("NRS"
+                    ("value"	"")
+                    ("pspice_param"	"NRS")
+                )
+                ("NRG"
+                    ("value"	"")
+                    ("pspice_param"	"NRG")
+                )
+                ("NRB"
+                    ("value"	"")
+                    ("pspice_param"	"NRB")
+                )
+                ("M"
+                    ("value"	"")
+                    ("pspice_param"	"M")
                 )
             )
         )

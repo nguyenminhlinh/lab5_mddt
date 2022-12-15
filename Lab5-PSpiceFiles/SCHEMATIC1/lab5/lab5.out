@@ -1,5 +1,5 @@
 
-**** 12/15/22 23:46:59 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/16/22 00:37:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab5"  [ D:\MDDT\LAB5\Lab5-PSpiceFiles\SCHEMATIC1\lab5.sim ] 
 
@@ -32,22 +32,21 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source LAB5
-R_R1         0 N00406  2200k TC=0,0 
-R_R2         N00175 N00157  1.8k TC=0,0 
-R_R3         0 N00171  3.3k TC=0,0 
-J_J1         N00175 N00406 N00171 JbreakN 
+R_R1         0 N00484  680k TC=0,0 
+R_R2         N00808 N00157  2k TC=0,0 
+R_R3         0 N00812  1k TC=0,0 
 V_V1         N00157 0 12Vdc
-R_R4         N00406 N00157  3300k TC=0,0 
+M_M1         N00808 N00484 N00812 N00812 MbreakND           
 
 **** RESUMING lab5.cir ****
 .END
 
-**** 12/15/22 23:46:59 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/16/22 00:37:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab5"  [ D:\MDDT\LAB5\Lab5-PSpiceFiles\SCHEMATIC1\lab5.sim ] 
 
 
- ****     Junction FET MODEL PARAMETERS
+ ****     MOSFET MODEL PARAMETERS
 
 
 ******************************************************************************
@@ -55,13 +54,39 @@ R_R4         N00406 N00157  3300k TC=0,0
 
 
 
-               JbreakN         
-               NJF             
-         VTO   -2            
-        BETA  100.000000E-06 
+               MbreakND        
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO   -4            
+          KP   20.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
 
 
-**** 12/15/22 23:46:59 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/16/22 00:37:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab5"  [ D:\MDDT\LAB5\Lab5-PSpiceFiles\SCHEMATIC1\lab5.sim ] 
 
@@ -76,7 +101,7 @@ R_R4         N00406 N00157  3300k TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00157)   12.0000 (N00171)    2.0522 (N00175)   10.8840 (N00406)    2.5425 
+(N00157)   12.0000 (N00484)    0.0000 (N00808)   11.7030 (N00812)     .1484 
 
 
 
@@ -84,15 +109,15 @@ R_R4         N00406 N00157  3300k TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1        -6.230E-04
+    V_V1        -1.484E-04
 
-    TOTAL POWER DISSIPATION   7.48E-03  WATTS
+    TOTAL POWER DISSIPATION   1.78E-03  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 12/15/22 23:46:59 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/16/22 00:37:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-lab5"  [ D:\MDDT\LAB5\Lab5-PSpiceFiles\SCHEMATIC1\lab5.sim ] 
 
@@ -104,6 +129,6 @@ R_R4         N00406 N00157  3300k TC=0,0
 
 
 
-  License check-out time            =       36.19
-  Total job time (using Solver 1)   =         .22
+  License check-out time            =       36.42
+  Total job time (using Solver 1)   =         .27
 
